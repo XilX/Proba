@@ -33,8 +33,6 @@
 * фы
 * фыв
 
-$$x_1^2$$
-
 |1|2|3|
 |-|-|-|
 |4|5|6|
@@ -43,3 +41,5 @@ $$x_1^2$$
 
 ![Git-Hub](https://cdn.iconscout.com/icon/free/png-256/github-149-624845.png "Изображение")
 ![Git-Hub с пк](github.png)
+
+$$=\sum_{n=1}^{10}x_i$$
