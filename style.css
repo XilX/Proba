@@ -1,0 +1,17 @@
+﻿#wrapper {
+	/* background-image:url(fondiv.jpg); */
+	width: 96%;
+	max-width: 80%;
+	margin: auto;
+	padding: 2%;
+	border: 4px silver double;
+	border-radius:30px;
+	text-align: center;
+}
+body {
+	background-position: fixed;
+	/* background-image: url(fonbody.jpg);	 */
+	font-size:16pt;
+	background-color: black;
+    color: white;
+}
