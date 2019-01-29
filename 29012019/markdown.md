@@ -6,7 +6,7 @@
 ###### Заголовок 6-го уровня
 
 -----------
-[Mail.ru](http://mail.ru)
+[Книга](https://vk-book.ru/kniga-128-receptov-php/)
 
 Обычный текст
 
