@@ -9,23 +9,11 @@
 </head>
 <body><div id="wrapper"><pre>
     <?php
-
-    // $first = microtime(1);
-    // $second;
-    // $arr = [0=>'zero',1=>'one',2=>'two',4=>'four',5=>'five', 9=>'nine',7=>'seven',8=>'eight',6=>'six',3=>'three'];
-    // $arr2 = $arr;
-    // ksort ($arr);
-    // print_r($arr);
-    // asort ($arr2);
-
-
     $arr = [1,67,2,4,8,12,58,0,3,23];
     $arr2 = [1,67,2,4,8,12,58.3,0.3,3.3,23.3];
     $arr3 = [546,9687,1,564,5,2,4,66,5,74,6,2,14,6,74];
     $arr4 =[45,67,1,78,5,2,4,57,786,8,6,2,456,67,4778];
 
-
-    // print_r($arr2);
     //сортировка по убыванию
     for ($i=0; $i < count($arr2); $i++) { 
         for ($j=$i+1; $j < count($arr2); $j++) { 
@@ -37,8 +25,6 @@
         }
     }
 
-    
-    // print_r($arr2);
     //сортировка по возрастанию
     $time_start = microtime(1);
     function sortpuz ($arr){
@@ -54,7 +40,6 @@
     print_r($arr);
     }
 
-
     sortpuz ($arr);
     sortpuz ($arr2);
     sortpuz ($arr3);
@@ -62,8 +47,7 @@
     $time_end = microtime(1);
     $time = $time_end - $time_start;
     echo "Время сортировки массивов с помощью пользовательской функции: $time секунд".'<br>';
-    
-    
+        
     $time_start2 = microtime(1);
     
     asort ($arr);
@@ -79,11 +63,8 @@
     $time2 = $time_end2 - $time_start2;
 
     echo "Время сортировки массивов с помощью встроенной функции: $time2 секунд".'<br>'.'<br>';
-
     echo "Сортировка встроенной функцией быстрее на ".(($time2/$time)*100)."%".'<br>'.'<br>';
-
     echo "Сортировка встроенной функцией занимает ".(($time2/($time2+$time))*100)."% общего времени сортировки.".'<br>'.'<br>';
-
     echo "Сортировка пользовательской функцией занимает ".(($time/($time2+$time))*100)."% общего времени сортировки.".'<br>'.'<br>';
 
     ?></pre></div>
