@@ -98,7 +98,20 @@ echo sum($arra);
 echo "<Br>";
 echo sum2($arra);
 
+$start = microtime(1);
+for($i=0; $i<10000; $i++) {
+	sum($arra);
+}
+$end = microtime(1);
+echo ($time = $end - $start);
+echo "<br";
 
+$start2 = microtime(2);
+for($i=0; $i<10000; $i++) {
+	sum2($arra);
+}
+$end2 = microtime(2);
+echo ($time = $end2 - $start2 );
 ?></pre>
 </body>
 </html>
