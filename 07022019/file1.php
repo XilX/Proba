@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>   
+<body> <pre>  
 <?php
 
     // 1
@@ -67,13 +67,16 @@
     echo speed_test("my_sqrt", 20);
 
     // 5
-    echo array_sum($a);
-     $result = 0;
-    foreach($a as $val) {
-     $result += $val;
-    }
-    echo $result;
     echo "<br>";
-?>
+    $a1 = array(1,2,3,4,5,6,7,8,9,10);
+    print_r($a1);
+
+    $a2 = array_map(function($x){return $x*$x;}, $a1);
+    print_r($a2);
+
+    // n
+
+    
+?></pre>
 </body>
 </html>
