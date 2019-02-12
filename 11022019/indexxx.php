@@ -9,28 +9,20 @@
 <body>
 <?php
         $text1 = explode(" ",$_POST["text1"]);
-        function sum ($a,$b)
-        {
-            return $a+$b;
-        }  
-        if (!empty($_POST["text1"]))
-        {
+
+        function sum ($a,$b){return $a+$b;} 
+        if (!empty($_POST["text1"])) {
             $res1 = call_user_func($text1[0], $text1[1], $text1[2]);
         }
     
-        $text2 = explode(" ",$_POST["text2"]);
-        function power ($a,$b)
-        {
-            return pow($a,$b);
-        }
-        if (!empty($_POST["text2"]))
-        {
-            $res3 = call_user_func($text2[0], $text2[1],$text2[2]);
+        function power ($a,$b) {return pow($a,$b);}
+        if (!empty($_POST["text1"])){
+            $res3 = call_user_func($text1[0], $text1[1],$text1[2]);
         }   
 ?>
             <form action="#" method="post">
-                    <input type="text" name="text1" placeholder="<?php for ($i=0; $i < count($text1); $i++) { echo $text1[$i]." "; }?>"><br>
-                   <input type="submit" value="Узнать"><br>
+                    <input type="text" name="text1" placeholder="<?php for ($i=0; $i < count($text1); $i++) { echo $text1[$i]." "; }?>">
+                    <input type="submit" value="Узнать"><br>
                     <p>Результат: <?=$res1?></p>
             </form>
 </body>

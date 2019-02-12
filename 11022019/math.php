@@ -1,8 +1,5 @@
-<input type="text">
 
 <?php
-
-
     // Сумма //////////////////////////////
     function my_array_sum($arr4) {
         static $s=0;
