@@ -23,7 +23,7 @@ if (isset($_POST['URL']) and $_POST['URL'] != '') {
     $content = preg_replace('/\<.*\>/siU','',$content);
     $content = htmlspecialchars($content);
 }
-    for($i=1;$i<40;$i++) {
+    for($i=1;$i<36;$i++) {
         echo $i." букв: ";
         $count = preg_match_all('/\b\w{' .$i. '}\b/u',$content,$match,PREG_PATTERN_ORDER);
         echo $count.'<br>';
