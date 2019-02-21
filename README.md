@@ -10,5 +10,3 @@
 # Дз 21.02
 **Файлы** [homework.php](https://github.com/nikita8941109/Proba/blob/master/homework.php)
 [q.html](https://github.com/nikita8941109/Proba/blob/master/q.html)
-
-#a
