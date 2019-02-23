@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,13 @@
 </head>
 <body><pre>
     <?php
+    $arr= array(
+                array('img4','img102','img20','img29','img10','img212','img214','IMG218'), 
+                'img201',
+                'img2121',
+                'img131'
+    );
+
     $arr= [['img4','img102','img20','img29','img10','img212','img214','IMG218'], 'img201','img2121','img131'];
     print_r($arr);
     natsort($arr);
