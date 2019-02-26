@@ -16,7 +16,7 @@ require_once 'config.php';
         <div class="feedback-form">
             <form action="" method="post">
                 <input type="text" name="name" placeholder="Ваше имя" id="name" required>
-                <textarea name="feedback" placeholder="Оставьте свой отзыв" id="feedback" required></textarea>
+                <textarea name="feedback" placeholder="Текст будет тут" id="feedback" required></textarea>
                 <input type="submit" value="Отправить" id="button">
             </form>
         </div>
