@@ -9,6 +9,7 @@ require_once 'config.php';
     <meta charset="utf-8">
     <title>Гостевая книга</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    
 </head>
 <body>
     <div class="wrapper">
