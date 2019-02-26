@@ -10,14 +10,12 @@
     <?php
 
 
-function get_arr($file)
+function get_arr_from_xml($str)
 {
     $matches = null;
     preg_match_all('/<post>(.*?)(<msg>(.*?)<\/msg>)(.*?)(<nik>(.*?)<\/nik>)(.*?)<\/post>/siu', $str, $matches);
     print_r($matches);
-    $msg = $matches[3];
-    $nik = $matches[6];
-
+    
     $array = [];
     foreach ($msg as $key => $value) {
         $array[] = ['msg' =>$msg[$key], 'nik'=>$nik[$key]];
@@ -30,8 +28,10 @@ function get_arr($file)
             $str .= "<post>\n\t<msg>$value</>";
         }
     }
-    $arr = get_arr(file_get_contents('file2.xml'));
+    $arr = get_arr_from_xml(file_get_contents('file2.xml'));
     print_r($arr);
+    $str = put_array_to_xml($arr);
+    print_r('file2.xml', $str);
 ?>
 
 </body>
