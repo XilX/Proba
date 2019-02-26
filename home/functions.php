@@ -41,14 +41,16 @@ function smileEncode($text)
         '/\[happy\]/iu',           
         
         '/\[evil\]/iu',             
-      
+        '/\[good\]/iu',   
+        '/\[php\]/iu',   
         '/\[no\-happy\]/iu'        
     );
     $replace = array(
       
         '<img src="happy.png" alt="happy" class="smile" style="width: 35px; height: 50px;">',
-       
+        '<img src="el.gif" alt="php" class="smile">',
         '<img src="evil.jpg" alt="evil" class="smile" style="width: 35px; height: 50px;">',
+        '<img src="good.png" alt="evil" class="smile" style="width: 35px; height: 50px;">',
        
         '<img src="no-happy.png" alt="no-happy" class="smile" style="width: 35px; height: 50px;">'
         
@@ -94,3 +96,4 @@ function addFeedback($name, $feed)
         return 'Ваш отзыв успешно добавлен.';
     }
 }
+array

@@ -12,14 +12,7 @@ require_once 'config.php';
     
 </head>
 <body>
-    <div class="wrapper">
-        <div class="feedback-form">
-            <form action="" method="post">
-                <input type="text" name="name" placeholder="Ваше имя" id="name" required>
-                <textarea name="feedback" placeholder="Текст будет тут" id="feedback" required></textarea>
-                <input type="submit" value="Отправить" id="button">
-            </form>
-        </div>
+    
         <div class="smile-exampl">
             <?php
             foreach($smile as $key=>$value) {
@@ -43,5 +36,13 @@ require_once 'config.php';
             <?php } ?>
         </div>
     </div>
+    <div class="wrapper">
+        <div class="feedback-form">
+            <form action="" method="post">
+                <input type="text" name="name" placeholder="Ваше имя" id="name" required>
+                <textarea name="feedback" placeholder="Текст будет тут" id="feedback" required></textarea>
+                <input type="submit" value="Отправить" id="button">
+            </form>
+        </div>
 </body>
 </html>
