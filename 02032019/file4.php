@@ -17,11 +17,22 @@
 // echo ($_POST["text"]);
 // $patterns = array ('/:\)/','/:\(/','/;\)/');
 // $replace = array ('<img src="1.png" style="height: 35px;">', '<img src="2.jpg" style="height: 35px;">', '<img src="3.jpg" style="height: 35px;">');
-// echo preg_replace($patterns,$replace,$_POST["text"]); 
- function censura($cens) {
-  echo "Вы использовали нецензурных слов:" .preg_match_all('/дурак|редиска/',$_POST["text"]);
- }
-// ) {
+// echo preg_replace($patterns,$replace,$_POST["text"]);
+
+
+//    echo ($_POST["text"]);
+    $patterns = array ('/:\)/','/:\(/','/;\)/');
+    $replace = array ('<img src="1.png" style="height: 35px;">', '<img src="2.jpg" style="height: 35px;">', '<img src="3.jpg" style="height: 35px;">');
+    echo preg_replace($patterns,$replace,$_POST["text"]);
+//    function censura($cens) {
+//        echo "Вы использовали нецензурных слов:" .preg_match_all('/дурак|редиска/',$_POST["text"]);
+//    }
+    $patterns ='/дурак|редиска/';
+    $replace ='<img src="4.jpg" style="height: 35px;">';
+    echo preg_replace($patterns,$replace,$_POST["text"]);
+
+
+    // ) {
 
 //     echo '<font style="color: blue;">Цензура</font>';
 // } else {
