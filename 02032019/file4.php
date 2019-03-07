@@ -1,3 +1,4 @@
+<!-- https://www.youtube.com/watch?v=5CPTpFit3hg&list=PLVfMKQXDAhGWCBTca7m-snWrZZkjX2jGB -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,26 +22,32 @@
 
 
 //    echo ($_POST["text"]);
-    $patterns = array ('/:\)/','/:\(/','/;\)/');
-    $replace = array ('<img src="1.png" style="height: 35px;">', '<img src="2.jpg" style="height: 35px;">', '<img src="3.jpg" style="height: 35px;">');
-    echo preg_replace($patterns,$replace,$_POST["text"]);
-//    function censura($cens) {
-//        echo "Вы использовали нецензурных слов:" .preg_match_all('/дурак|редиска/',$_POST["text"]);
-//    }
+    $patterns = array ( 
+                        '/:\)/',
+                        '/:\(/',
+                        '/;\)/'
+                      );
+
+    $replace = array (
+                        '<img src="1.png" style="height: 35px;">',
+                        '<img src="2.jpg" style="height: 35px;">',
+                        '<img src="3.jpg" style="height: 35px;">'
+                     );
+    echo preg_replace(
+                        $patterns,
+                        $replace,
+                        $_POST["text"]
+                     );
+                
     $patterns ='/дурак|редиска/';
     $replace ='<img src="4.jpg" style="height: 35px;">';
     echo preg_replace($patterns,$replace,$_POST["text"]);
 
-
     // ) {
-
 //     echo '<font style="color: blue;">Цензура</font>';
 // } else {
 //     echo '<font style="color: red;">Проверка NE пройдена !</font>';
-
 // }
-
-
 ?>
 </body>
 </html>
