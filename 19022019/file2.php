@@ -87,4 +87,4 @@ return $str4;
 
 }
 echo censour($_POST['text']);
-?>
+?>                           
