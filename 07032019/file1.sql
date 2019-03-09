@@ -60,3 +60,4 @@ SELECT * FROM `Customers` WHERE CITY LIKE '%n%';
 
 SELECT * FROM `Customers` WHERE CHAME LIKE '_e%'
 -- Поиск по букве e
+ 

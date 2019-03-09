@@ -1,0 +1,53 @@
+﻿#wrapper {
+	box-shadow: 14px 14px 24px black;
+	background-image:url(fondiv.jpg);
+	width: 96%;
+	max-width: 80%;
+	margin: auto;
+	padding: 2%;
+	border: 4px silver double;
+	border-radius:15px;
+	text-align: center;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-name: rotation;
+	animation-timing-function: linear;
+}
+
+fieldset {
+	border: 4px silver double;
+	border-radius:15px;
+}
+
+body {
+	background-position: fixed;
+	background-image: url(fonbody.jpg);
+	font-size:16pt;
+	background-attachment: fixed;
+	
+}
+
+/* @keyframes rotation { 
+	0% {transform:rotate(0deg);} 
+	100% {transform:rotate(360deg);}
+	} */
+
+.gradient-text {
+	font-size: 25px;
+	text-transform: uppercase;
+	background: linear-gradient(45deg, rgba(0,0,0,1) 33%, rgba(0,0,0,0) );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #0B2349;
+	display: table;
+	margin: 20px auto;
+}
+
+.table{
+	border: solid silver 1px;
+	border-radius: 15px;
+	text-align: center;
+}
+table{
+	width:100%;
+}
