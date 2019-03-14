@@ -1,0 +1,1 @@
+UPDATE `vedomost` SET zp = 2000 WHERE otdel = 'Юредический';

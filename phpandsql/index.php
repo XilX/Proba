@@ -34,6 +34,8 @@
     mysqli_free_result($res);
 
     mysqli_close($link);
+    $res = mysqli_query($link, "INSERT INTO 'guest_book'(NIK,MSG) VALUES ('Петя','Привет')");
+    echo "INSERT INTO 'guest_book'(NIK,MSG) VALUES ('Петя','Привет')";
     ?><br><br>
     <fieldset>
         <form action="#" method="post">
