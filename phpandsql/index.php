@@ -12,14 +12,17 @@
     <?php
     print_r($_POST);
 
-    $link = mysqli_connect("localhost", "root", "", "shop");
+    $link = mysqli_connect("localhost", "root", "", "book");
 
     if (mysqli_connect_errno()) {
         echo "Не удалось подключиться к MySQL: (" .
             mysqli_connect_errno() . ") " . mysqli_connect_error();
     }
 
-    $res = mysqli_query($link, "SELECT * FROM customers");
+
+    $insert = "INSERT INTO `guest_book` (NIK,MSG) VALUES ('".$_POST['NIK']."', '".$_POST['MSG']."')";
+    $query = mysqli_query($link, $insert);
+    $res = mysqli_query($link, "SELECT * FROM guest_book");
 
     echo "<table border='1'>";
     while ($row = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
@@ -30,13 +33,12 @@
         echo "</tr>";
     }
     echo "</table>";
-
     mysqli_free_result($res);
-
     mysqli_close($link);
-    $res = mysqli_query($link, "INSERT INTO 'guest_book'(NIK,MSG) VALUES ('Петя','Привет')");
-    echo "INSERT INTO 'guest_book'(NIK,MSG) VALUES ('Петя','Привет')";
-    ?><br><br>
+    //$res = mysqli_query($link, "INSERT INTO 'guest_book'(NIK,MSG) VALUES ('Петя','Привет')");
+    
+    ?>
+    <br><br>
     <fieldset>
         <form action="#" method="post">
             <input name="nik" type="text" placeholder="Введите свой ник"><br><br>
